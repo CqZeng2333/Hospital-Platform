@@ -42,5 +42,5 @@ def test_insert_data_invalid_data_format():
     assert code == 405
 
 if __name__ == '__main__':
-    pytest.main(['src/device/test_device.py', '-s'])
+    pytest.main(['device/src/test_device.py', '-s'])
 

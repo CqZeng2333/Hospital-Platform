@@ -11,7 +11,12 @@ Return:
 '''
 def is_valid_patient_id(patient_id):
     if type(patient_id) == int:
-        if patient_id == 163949385:
+        patient_ids = []
+        with open('patient/data/patient_id.csv', 'r', encoding='utf8') as f:
+            lines = f.readlines()[1:]
+            for line in lines:
+                patient_ids.append(int(line))
+        if patient_id in patient_ids:
             return 200
         else:
             return 404
