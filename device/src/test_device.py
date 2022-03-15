@@ -1,5 +1,5 @@
 import pytest
-import measurement as mea
+from . import measurement as mea
 
 def test_insert_data():
     code = mea.insert_measurement_data(163949385, {
