@@ -15,6 +15,7 @@
 ### [Patient](./patient)
 * Local version API of patient module. 
 
-### [Device Project](./device_project)
+### [Device API](./device_api)
 * Rest API of device module.
-* More details in [README](./device_project/README.md)
+* Include functions of creating new measurement records, and searching specific patients' measurement records.
+* Sample usage in [example.py](./device_api/example.py). 
