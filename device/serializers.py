@@ -7,8 +7,3 @@ class MeasurementSerializer(serializers.ModelSerializer):
         "temperature","systolic_blood_pressure","diastolic_blood_pressure","pulse","oximeter","weight","glucometer",
         'created_at', 'updated_at',)
         model = models.Measurement
-
-class PatientSerializer(serializers.ModelSerializer):
-    class Meta:
-        fields = ('id', 'name', )
-        model = models.Patient

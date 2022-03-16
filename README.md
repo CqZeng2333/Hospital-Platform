@@ -1,7 +1,9 @@
 # Hospital-Platform
 ## Branching Strategy
 * Add to main branch when function of module is well tested
-* Ongoing function should be seen at branches
+* Ongoing function should be seen at dev branch
+* Main: User module, Patient module, Device module
+* Dev: Chat module
 
 ## Requirement
 * Python 3.6+
@@ -9,13 +11,13 @@
 * djangorestframework
 
 ## Model
-### [Device](./device)
-* Local version API of device module. 
+### [User](./user)
+* Rest API of user module. 
 
 ### [Patient](./patient)
-* Local version API of patient module. 
+* Rest API of patient module. 
 
-### [Device API](./device_api)
+### [Device](./device)
 * Rest API of device module.
 * Include functions of creating new measurement records, and searching specific patients' measurement records.
-* Sample usage in [example.py](./device_api/example.py). 
+* Sample usage in [example.py](./device/example.py). 

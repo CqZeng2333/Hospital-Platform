@@ -26,10 +26,10 @@ class MeasureForPatient(generics.ListAPIView):
         # patient_id = self.kwargs['patient_id']
         if not patient_id:
             return Response(status=400, data='Incorrect patient ID. ')
-        else:
-            patient = models.Patient.objects.filter(id=int(patient_id))
-            if not patient.exists():
-                return Response(status=400, data='Patient does not exist. ')
+        # else:
+        #     patient = models.Patient.objects.filter(id=int(patient_id))
+        #     if not patient.exists():
+        #         return Response(status=400, data='Patient does not exist. ')
         
         objects = self.get_queryset()
         if not objects.exists():
@@ -39,7 +39,3 @@ class MeasureForPatient(generics.ListAPIView):
 
 class AddMeasurementView(generics.CreateAPIView): 
     serializer_class = serializers.MeasurementSerializer
-
-class PatientList(generics.ListAPIView):
-    queryset = models.Patient.objects.all()
-    serializer_class = serializers.PatientSerializer
