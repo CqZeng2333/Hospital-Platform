@@ -5,6 +5,7 @@ from rest_framework import generics
 from rest_framework.response import Response
 from . import models
 from . import serializers
+from patient.models import Patient
 
 class MeasureList(generics.ListAPIView):
     queryset = models.Measurement.objects.all()
@@ -23,13 +24,12 @@ class MeasureForPatient(generics.ListAPIView):
         return queryset
 
     def get(self, request, patient_id):
-        # patient_id = self.kwargs['patient_id']
         if not patient_id:
             return Response(status=400, data='Incorrect patient ID. ')
-        # else:
-        #     patient = models.Patient.objects.filter(id=int(patient_id))
-        #     if not patient.exists():
-        #         return Response(status=400, data='Patient does not exist. ')
+        else:
+            patient = Patient.objects.filter(id=int(patient_id))
+            if not patient.exists():
+                return Response(status=400, data='Patient does not exist. ')
         
         objects = self.get_queryset()
         if not objects.exists():
