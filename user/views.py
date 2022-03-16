@@ -1,7 +1,7 @@
 from rest_framework import generics
-from rest_framework.response import Response
 from . import models
 from . import serializers
+#from rest_framework.response import Response
 
 # Create your views here.
 class UserList(generics.ListAPIView):
