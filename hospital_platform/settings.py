@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'user',
     'patient',
     'device',
+    'chat',
 ]
 
 MIDDLEWARE = [
