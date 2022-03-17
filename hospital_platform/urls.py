@@ -21,4 +21,5 @@ urlpatterns = [
     path('user/', include('user.urls')),
     path('patient/', include('patient.urls')),
     path('device/', include('device.urls')),
+    path('chat/', include('chat.urls')),
 ]

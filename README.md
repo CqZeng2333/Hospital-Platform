@@ -14,27 +14,37 @@
 ## Model
 ### [User](./user)
 * Rest API of user module. 
-* Sample usage in [example.py](./user/example.py).
+* Sample usage in [user/example.py](./user/example.py).
 
-|Method|Function|URL|
-|:-|:-|:-|
-|GET|Get all user(s)|/user/|
-|GET|Get a specific user|/user/{user_id}/|
+|Method|Function|URL|Return Code|
+|:-|:-|:-|:-|
+|GET|Get all user(s)|/user/|200 OK|
+|GET|Get a specific user|/user/{user_id}/|200 OK<br>404 Not Found|
 
 ### [Patient](./patient)
 * Rest API of patient module. 
-* Sample usage in [example.py](./patient/example.py).
+* Sample usage in [patient/example.py](./patient/example.py).
 
-|Method|Function|URL|
-|:-|:-|:-|
-|GET|Get all patient(s)|/patient/|
-|GET|Get a specific patient|/patient/{patient_id}/|
+|Method|Function|URL|Return Code|
+|:-|:-|:-|:-|
+|GET|Get all patient(s)|/patient/|200 OK|
+|GET|Get a specific patient|/patient/{patient_id}/|200 OK<br>404 Not found|
 
 ### [Device](./device)
 * Rest API of device module.
-* Sample usage in [example.py](./device/example.py).
+* Sample usage in [device/example.py](./device/example.py).
 
-|Method|Function|URL|
-|:-|:-|:-|
-|GET|Get measurement(s) for a specific patient|/device/patient-id/{patient_id}/|
-|POST|Create new measurement for a specific patient|/device/measurement/add/|
+|Method|Function|URL|Return Code|
+|:-|:-|:-|:-|
+|GET|Get measurement(s) for a patient|/device/patient-id/{patient_id}/|200 OK<br>400 No patient<br>404 No measurement for the patient|
+|POST|Create new measurement for a patient|/device/measurement/add/|201 OK<br>400 No patient|
+
+### [Chat](./chat)
+* Rest API of chat module.
+* Sample usage in [chat/example.py](./chat/example.py).
+
+|Method|Function|URL|Return Code|
+|:-|:-|:-|:-|
+|GET|Get chat(s) from a user|/chat/from/{user_id}/|200 OK<br>400 No user<br>404 No chat for the user|
+|GET|Get chat(s) to a user|/chat/to/{user_id}/|200 OK<br>400 No user<br>404 No chat for the user|
+|POST|Create new chat for a user|/chat/add/|201 OK<br>400 No user|
