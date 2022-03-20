@@ -7,9 +7,10 @@
 * Dev: Chat module
 
 ## Requirement
-* Python 3.6+
-* Django 2.2.5
-* djangorestframework 3.13.1
+* Python 3.6, 3.7, 3.8
+* Django 2.1
+* djangorestframework 3.11.2
+* SQLite3 3.7.17
 
 ## Model
 ### [User](./user)
