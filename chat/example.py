@@ -47,3 +47,15 @@ print (response.url)
 print (response.status_code)
 print (response.headers)
 print (response.text)
+
+chat_file = [
+    ('audio', ('Upload_test_file1.wav', open('chat/media/audio/2830-3980-0043.wav', 'rb'))),
+    ('audio', ('Upload_test_file2.wav', open('chat/media/audio/4507-16021-0012.wav', 'rb'))),
+]
+session = requests.session()
+response = session.post('http://127.0.0.1:8000/chat/audio-to-text/', files=chat_file)
+print('Upload audio:')
+print (response.url)
+print (response.status_code)
+print (response.headers)
+print (response.text)
