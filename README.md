@@ -74,4 +74,7 @@
     <img src="./img/login_success.png" width="40%">
     <div>Upload Measurement Data</div>
     <img src="./img/upload_measurement.png" width="40%">
-</div>
+</div><br>
+
+### [Database Design](./Hospital_Platform_Schema.png)
+![database design](./Hospital_Platform_Schema.png)
