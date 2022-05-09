@@ -68,12 +68,17 @@
 * Front-end mobile application of health platform
 ### Result Screenshot
 <br>
-<div align="left">
-    <div>Google Login</div>
-	<img src="./img/login.png" width="40%">
-    <img src="./img/login_success.png" width="40%">
-    <div>Upload Measurement Data</div>
-    <img src="./img/upload_measurement.png" width="40%">
+<div align="center">
+    <div><font size=4>Google Login</font><br>
+        <img src="./img/login.png" width="40%">
+        <img src="./img/login_success.png" width="40%">
+    </div><br>
+    <div><font size=4>Upload Measurement Data</font><br>
+        <img src="./img/upload_measurement.png" width="40%">
+    </div><br>
+    <div><font size=4>Chat Flow</font><br>
+        <img src="./img/chatflow.png" width="40%">
+    </div><br>
 </div><br>
 
 ### [Database Design](./Hospital_Platform_Schema.png)
