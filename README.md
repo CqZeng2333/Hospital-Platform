@@ -15,6 +15,7 @@
 * djangorestframework 3.11.2
 * SQLite3 3.7.17
 * DeepSpeech 0.9.3
+* React Native
 
 ## Module
 ### [User](./user)
@@ -68,6 +69,9 @@
 ### Result Screenshot
 <br>
 <div align="left">
+    <div>Google Login</div>
 	<img src="./img/login.png" width="40%">
     <img src="./img/login_success.png" width="40%">
+    <div>Upload Measurement Data</div>
+    <img src="./img/upload_measurement.png" width="40%">
 </div>
