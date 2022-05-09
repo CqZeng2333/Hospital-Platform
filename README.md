@@ -62,3 +62,12 @@
 |Method|Function|URL|Return Code|
 |:-|:-|:-|:-|
 |POST|Translate WAV file(s) to text|/chat/audio-to-text/|200 OK<br>400 WAV file(s) restricted|
+
+### [HealthConnect](./HealthConnect)
+* Front-end mobile application of health platform
+### Result Screenshot
+<br>
+<div align="left">
+	<img src="./img/login.png" width="40%">
+    <img src="./img/login_success.png" width="40%">
+</div>

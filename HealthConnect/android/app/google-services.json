@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "35106254771",
+    "project_id": "healthconnect-4d394",
+    "storage_bucket": "healthconnect-4d394.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35106254771:android:002f87e870365e79b865c6",
+        "android_client_info": {
+          "package_name": "com.healthconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35106254771-332gl958p2a3t8advk3o3736n5o09plh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.healthconnect",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "35106254771-0a41lprgo03662sh6fbhcddlvcr8lqp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC83V_x7eVLZSnZJpLSeSf4xFwBchBNDnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35106254771-0a41lprgo03662sh6fbhcddlvcr8lqp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
